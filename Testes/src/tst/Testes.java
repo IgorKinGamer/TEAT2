@@ -66,8 +66,8 @@ public class Testes
 	public void intervaloComplexo()
 	{
 		double valor = 6.89d;
-		double centroIntervaloAceito = 7d, erroIntervaloAceito = .3d;
-		double centroSubintervaloRejeitado = 7.1d, erroSubintervaloRejeitado = .2d;
+		double centroIntervaloAceito = 7d, erroIntervaloAceito = .30d;
+		double centroSubintervaloRejeitado = 7.08d, erroSubintervaloRejeitado = .11d;
 		assertThat(valor, allOf(
 				new IsCloseTo(centroIntervaloAceito, erroIntervaloAceito),
 				not(new IsCloseTo(centroSubintervaloRejeitado, erroSubintervaloRejeitado))));
