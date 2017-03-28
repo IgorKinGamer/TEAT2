@@ -9,6 +9,8 @@ import br.ufsc.ine.leb.sistemaBancario.*;
 
 public class TestesHamcrest
 {
+	/////// EXERCÍCIO 3: Matcher para conta ///////
+	
 	@Test
 	public void combinarConta()
 	{

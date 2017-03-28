@@ -15,7 +15,7 @@ import static org.hamcrest.collection.IsArrayContaining.*;
 import static org.hamcrest.text.IsEmptyString.*;
 import static org.hamcrest.text.IsEqualIgnoringCase.*;
 
-/////// EXERCÍCIO 1: Reescrever testes com matchers do Hamcrest ///////
+/////// EXERCÍCIO 1: Testes com matchers ///////
 
 public class Testes
 {
@@ -69,7 +69,7 @@ public class Testes
 		double centroIntervaloAceito = 7d, erroIntervaloAceito = .3d;
 		double centroSubintervaloRejeitado = 7.1d, erroSubintervaloRejeitado = .2d;
 		assertThat(valor, allOf(
-						new IsCloseTo(centroIntervaloAceito, erroIntervaloAceito),
-						not(new IsCloseTo(centroSubintervaloRejeitado, erroSubintervaloRejeitado))));
+				new IsCloseTo(centroIntervaloAceito, erroIntervaloAceito),
+				not(new IsCloseTo(centroSubintervaloRejeitado, erroSubintervaloRejeitado))));
 	}
 }

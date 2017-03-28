@@ -10,7 +10,6 @@ public class EhConta extends BaseMatcher<Conta>
 	
 	public EhConta(String id, String titular, String banco, String agência)
 	{
-		// TODO Auto-generated constructor stub
 		this.id = id;
 		this.titular = titular;
 		this.banco = banco;
