@@ -1,0 +1,26 @@
+package br.ufsc.ine.leb.sistemaBancario.testes;
+
+import static org.junit.Assert.*;
+
+import org.junit.*;
+
+import br.ufsc.ine.leb.sistemaBancario.*;
+
+public class TestesHamcrest
+{
+	@Test
+	public void combinarConta()
+	{
+		// Configuração inline
+		SistemaBancario sistemaBancário = new SistemaBancario();
+		Banco bancoDoBrasil = sistemaBancário.criarBanco(
+				"Banco Do Brasil", Moeda.BRL);
+		Agencia centro = bancoDoBrasil.criarAgencia("Centro");
+		
+		// Exercitação
+		Conta maria = centro.criarConta("Maria");
+		
+		// Verificação
+		assertThat(maria, new EhConta("0001-5", "Maria", "Banco Do Brasil", "Centro"));
+	}
+}

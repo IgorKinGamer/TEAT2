@@ -1,0 +1,33 @@
+package tst;
+
+import java.math.*;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+import org.hamcrest.number.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.number.IsCloseTo.*;
+
+public class Testes
+{
+	@Test
+	public void stringIgual()
+	{
+		assertThat("Ei", equalTo("Ei"));
+	}
+	
+	@Test
+	public void matcherNúmero()
+	{
+		assertThat(new BigDecimal(314), closeTo(new BigDecimal(315), 3))
+	}
+	
+	/*@Test
+	public void ()
+	{
+		
+	}
+	
+	*/
+}

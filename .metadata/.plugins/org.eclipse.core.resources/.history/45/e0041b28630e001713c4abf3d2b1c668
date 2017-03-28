@@ -1,0 +1,147 @@
+package tst;
+
+import static org.junit.Assert.*;
+
+import org.joda.time.*;
+import org.junit.*;
+
+public class Testes
+{
+	@Test
+	public void criarData()
+	{
+		final int DIA = 14, MÊS = 3, ANO = 2017; 
+		LocalDate catorzeMarço2017 = new LocalDate(ANO, MÊS, DIA);
+		assertEquals(14, catorzeMarço2017.getDayOfMonth());
+		assertEquals(DateTimeConstants.MARCH, catorzeMarço2017.getMonthOfYear());
+		assertEquals(2017, catorzeMarço2017.getYear());
+	}
+	
+	@Test(expected = IllegalFieldValueException.class)
+	public void criarDataInválida()
+	{
+		final int dia = -14, mês = 3, ano = 2017; 
+		new LocalDate(ano, mês, dia);
+	}
+	
+	@Test
+	public void minhaDataDeNascimentoExistiuEEstáCorreta()
+	{
+		LocalDate nascimento = new LocalDate(1995, 5, 26);
+		assertEquals(26, nascimento.getDayOfMonth());
+		assertEquals(DateTimeConstants.MAY, nascimento.getMonthOfYear());
+		assertEquals(1995, nascimento.getYear());
+	}
+	
+	@Test(expected = IllegalFieldValueException.class)
+	public void anoNãoBissextoNãoTem29DeFevereiro()
+	{
+		final int DIA = 29, MÊS = 2, ANO = 2001;
+		new LocalDate(ANO, MÊS, DIA);
+	}
+	
+	@Test
+	public void horárioMeioDiaExiste()
+	{
+		final int hora = 12, minuto = 0, segundo = 0;
+		LocalTime meioDia = new LocalTime(hora, minuto, segundo);
+		assertEquals(hora, meioDia.getHourOfDay());
+		assertEquals(minuto, meioDia.getMinuteOfHour());
+		assertEquals(segundo, meioDia.getSecondOfMinute());
+		assertEquals(0, meioDia.getMillisOfSecond());
+	}
+	
+	@Test
+	public void últimaMilissegundoDoDiaExiste()
+	{
+		final int hora = 23, minuto = 59, segundo = 59, milissegundo = 999;
+		LocalTime horaFinal = new LocalTime(hora, minuto, segundo, milissegundo);
+		assertEquals(hora, horaFinal.getHourOfDay());
+		assertEquals(minuto, horaFinal.getMinuteOfHour());
+		assertEquals(segundo, horaFinal.getSecondOfMinute());
+		assertEquals(milissegundo, horaFinal.getMillisOfSecond());
+	}
+	
+	@Test
+	public void construtoresEquivalentes()
+	{
+		LocalTime hora = new LocalTime(19, 0);
+		LocalTime hora_esperada = new LocalTime(19, 0, 0);
+		assertEquals(hora_esperada, hora);
+	}
+	
+	@Test
+	public void somaMinutoAoMeioDia()
+	{
+		LocalTime meioDia = new LocalTime(12, 0);
+		LocalTime meioDiaEUm = new LocalTime(12, 1);
+		assertEquals(meioDiaEUm, meioDia.plusMinutes(1));
+	}
+	
+	@Test
+	public void subtraiMilissegundoDoMeioDia()
+	{
+		LocalTime meioDia = new LocalTime(12, 0);
+		LocalTime meioDiaMenosUmMilissegundo = new LocalTime(11, 59, 59, 999);
+		assertEquals(meioDiaMenosUmMilissegundo, meioDia.minusMillis(1));
+	}
+	
+	@Test
+	public void milissegundoDaVirada()
+	{
+		final int hora = 23, minuto = 59, segundo = 59, milissegundo = 999;
+		LocalTime horaFinal = new LocalTime(hora, minuto, segundo, milissegundo);
+		LocalTime horaZero = new LocalTime(0, 0);
+		assertEquals(horaZero, horaFinal.plusMillis(1));
+	}
+	
+	@Test
+	public void horárioPrecede()
+	{
+		final int horaManhã = 7, horaTarde = horaManhã + 12, minuto = 23;
+		LocalTime momentoManhã = new LocalTime(horaManhã, minuto);
+		LocalTime momentoTarde = new LocalTime(horaTarde, minuto);
+		assertTrue(momentoManhã.isBefore(momentoTarde));
+	}
+	
+	@Test
+	public void horárioSucede()
+	{
+		final int horaManhã = 8, horaTarde = horaManhã + 12, minuto = 5;
+		LocalTime momentoManhã = new LocalTime(horaManhã, minuto);
+		LocalTime momentoTarde = new LocalTime(horaTarde, minuto);
+		assertTrue(momentoTarde.isAfter(momentoManhã));
+	}
+	
+	@Test
+	public void dataHorárioQualquer()
+	{
+		final int ano = 1997, mês = 4, dia = 21, hora = 15, minuto = 7, segundo = 58;
+		DateTime hora23DeAbrilDe1997 =
+				new DateTime(ano, mês, dia, hora, minuto, segundo);
+		assertEquals(ano, hora23DeAbrilDe1997.getYear());
+		assertEquals(mês, hora23DeAbrilDe1997.getMonthOfYear());
+		assertEquals(dia, hora23DeAbrilDe1997.getDayOfMonth());
+		assertEquals(hora, hora23DeAbrilDe1997.getHourOfDay());
+		assertEquals(minuto, hora23DeAbrilDe1997.getMinuteOfHour());
+		assertEquals(segundo, hora23DeAbrilDe1997.getSecondOfMinute());
+	}
+	
+	@Test
+	public void intervalo()
+	{
+		DateTime data1 = new DateTime(2010, 3, 4, 8, 51, 10);
+		DateTime data2 = new DateTime(2011, 1, 7, 12, 0, 1);
+		Interval intervalo = new Interval(data1, data2);
+		assertEquals(data1, intervalo.getStart());
+		assertEquals(data2, intervalo.getEnd());
+	}
+	
+	@Test
+	public void intervaloInválido()
+	{
+		DateTime data1 = new DateTime(2010, 3, 4, 8, 51, 10);
+		DateTime data2 = new DateTime(2011, 1, 7, 12, 0, 1);
+		Interval intervalo = new Interval(data1, data2);
+	}
+}

@@ -1,0 +1,22 @@
+package br.ufsc.ine.leb.sistemaBancario.testes;
+
+import org.hamcrest.*;
+
+public class CombinadorConta extends BaseMatcher
+{
+
+	@Override
+	public boolean matches(Object arg0)
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void describeTo(Description arg0)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
