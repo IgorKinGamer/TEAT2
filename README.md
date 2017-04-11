@@ -18,4 +18,5 @@ Exercício 4 – Fluxo de controle – Jogo das peças:
 - Testes finais: [Testes2.java](EightPuzzleGame/tst/domain/Testes2.java)
 - [Diagramas](EightPuzzleGame/diagramas) (nos formatos HTML (baixar para visualizar), PDF, PNG e SVG)
 
-[Exercício 5 – Setup Hierárquico – Sistema Bancário](SistemaBanc%C3%A1rio/src/br/ufsc/ine/leb/sistemaBancario/testes/hier)
+Exercício 5 – Setup Hierárquico – Sistema Bancário
+- [Testes](SistemaBanc%C3%A1rio/src/br/ufsc/ine/leb/sistemaBancario/testes/hier)
