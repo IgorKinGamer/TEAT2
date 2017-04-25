@@ -14,10 +14,10 @@ public class Testes2
 	{
 		SquareBoard tabuleiro = new SquareBoard(3);
 		PuzzleGame jogo = criarJogo();
-		List<Tile> peças = new ArrayList<>();
+		List<Tile> peças = new ArrayList<Tile>();
 		for (int i = 1; i <= 8; i++)
 			peças.add(new Tile(i));
-		List<Position> posições = new ArrayList<>();
+		List<Position> posições = new ArrayList<Position>();
 		for (int i = 1; i <= 3; i++)
 			for (int j = 1; j <= 3; j++)
 				//if (posições.size() < 8)

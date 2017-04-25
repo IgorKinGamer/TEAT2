@@ -14,11 +14,11 @@ public class Testes
 	public void colocarPeçasNoTabuleiro()
 	{
 		SquareBoard tabuleiro = new SquareBoard(3);
-		PuzzleGame jogo = criarJogo();
-		List<Tile> peças = new ArrayList<>();
+		PuzzleGame jogo = criarJogoVazioNoCentro();
+		List<Tile> peças = new ArrayList<Tile>();
 		for (int i = 1; i <= 8; i++)
 			peças.add(new Tile(i));
-		List<Position> posições = new ArrayList<>();
+		List<Position> posições = new ArrayList<Position>();
 		for (int i = 1; i <= 3; i++)
 			for (int j = 1; j <= 3; j++)
 				if (posições.size() < 8)
@@ -41,7 +41,7 @@ public class Testes
 	@Test
 	public void moverCasaVaziaParaBaixo()
 	{
-		PuzzleGame jogo = criarJogo();
+		PuzzleGame jogo = criarJogoVazioNoCentro();
 		boolean deuCerto = jogo.moveToEmptyCell(DOWN);
 		assertTrue(deuCerto);
 	}
@@ -49,7 +49,7 @@ public class Testes
 	@Test
 	public void moverCasaVaziaParaCima()
 	{
-		PuzzleGame jogo = criarJogo();
+		PuzzleGame jogo = criarJogoVazioNoCentro();
 		boolean deuCerto = jogo.moveToEmptyCell(UP);
 		assertTrue(deuCerto);
 	}
@@ -57,7 +57,7 @@ public class Testes
 	@Test
 	public void moverCasaVaziaParaDireita()
 	{
-		PuzzleGame jogo = criarJogo();
+		PuzzleGame jogo = criarJogoVazioNoCentro();
 		boolean deuCerto = jogo.moveToEmptyCell(RIGHT);
 		assertTrue(deuCerto);
 	}
@@ -65,15 +65,16 @@ public class Testes
 	@Test
 	public void moverCasaVaziaParaEsquerda()
 	{
-		PuzzleGame jogo = criarJogo();
+		PuzzleGame jogo = criarJogoVazioNoCentro();
 		boolean deuCerto = jogo.moveToEmptyCell(LEFT);
 		assertTrue(deuCerto);
 	}
 	
 	
 	/////// Utilidades ///////
-	private PuzzleGame criarJogo()
+	private PuzzleGame criarJogoVazioNoCentro()
 	{
-		return new PuzzleGame(3, new EmbaralhadorFixo(null));
+		return new PuzzleGame(3, new EmbaralhadorFixo(
+				Arrays.asList(new Puzzle.Direction[] {DOWN, RIGHT})));
 	}
 }

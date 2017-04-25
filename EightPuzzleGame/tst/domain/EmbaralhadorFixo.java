@@ -15,7 +15,7 @@ public class EmbaralhadorFixo implements StrategyShufflePuzzle
 		if (movimentos == null)
 			this.movimentos = Collections.emptyList();
 		else
-			this.movimentos = new LinkedList<>(movimentos);
+			this.movimentos = new LinkedList<Direction>(movimentos);
 	}
 	
 	@Override
