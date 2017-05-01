@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/Testes.moverCasaVaziaParaDireita()V",
+  "modified_states": "17",
+  "covered_states": "2",
+  "useless_covered_states": "2",
+  "modified":  [ "domain/Grid.numberOfColumns", "domain/EmbaralhadorFixo.movimentos", "domain/Tile.number", "domain/PuzzleGame.board", "domain/Grid.matrix", "domain/Board.grid", "domain/Tile.hash", "domain/Position.column", "domain/Position.line", "domain/PuzzleGame.positionsOfTiles", "domain/Cell.tile", "domain/Board.columns", "domain/SquareBoard.dimension", "domain/PuzzleGame.emptyCell", "domain/Board.lines", "domain/PuzzleGame.boardWithFinalState", "domain/Grid.numberOfLines" ],
+  "covered":  [ "domain/PuzzleGame.board", "domain/PuzzleGame.emptyCell" ],
+  "useless":  [ "LEFT", "RIGHT" ],
+  "state_coverage": "0.11764705882352941"
+}
