@@ -20,3 +20,8 @@ Exercício 4 – Fluxo de controle – Jogo das peças:
 
 Exercício 5 – Setup Hierárquico – Sistema Bancário
 - [Testes](SistemaBanc%C3%A1rio/src/br/ufsc/ine/leb/sistemaBancario/testes/hier)
+
+Exercício 6 
+- [Relatório do Scova](EightPuzzleGame/scova/report.html)
+- [Build](EightPuzzleGame/scova/build_bem_sucedido.txt)
+
