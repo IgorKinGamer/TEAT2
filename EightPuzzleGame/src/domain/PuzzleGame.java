@@ -230,4 +230,9 @@ public class PuzzleGame implements Puzzle
 	{
 		return positionsOfTiles;
 	}
+	
+	SquareBoard pegarBoardWithFinalState()
+	{
+		return boardWithFinalState;
+	}
 }

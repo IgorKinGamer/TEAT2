@@ -32,7 +32,7 @@ public class Board
 	public Tile getTile(Position position)
 	{
 		if (this.isInsideTheBoard(position))
-		{
+		{System.out.println("AQUI");
 			return grid.get(position.getLine(), position.getColumn()).tile;
 		}
 		return null;
