@@ -1,0 +1,16 @@
+# Definir $muJava e $JAVA_HOME
+. preparar
+
+# Baixar
+wget https://cs.gmu.edu/~offutt/mujava/{mujava.jar,openjava.jar,mujava.config} -P $muJava
+
+# Colocar no classpath
+export CLASSPATH=$CLASSPATH:$muJava/mujava.jar:$muJava/openjava.jar:$JAVA_HOME/lib/tools.jar
+
+# Editar $muJava/mujava.config
+# (Manualmente)
+echo MuJava_HOME=$muJava > $muJava/mujava.config
+
+# Criar estrutura
+mkdir -p $muJava/{classes,result,src,testset}
+

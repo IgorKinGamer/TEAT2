@@ -1,0 +1,10 @@
+PCD_1:92:(br.ufsc.ine.leb.sistemaBancario.ValorMonetario) objeto => objeto
+JSI_1:10:static is inserted
+JSI_2:12:static is inserted
+JSI_3:14:static is inserted
+JTD_1:23:this.moeda => moeda
+JTI_1:18:moeda  -->  this.moeda
+JTI_2:23:moeda  -->  this.moeda
+JTI_3:25:moeda  -->  this.moeda
+IOD_1:89:public boolean equals(java.lang.Object objeto) is deleted.
+IOD_2:100:public java.lang.String toString() is deleted.

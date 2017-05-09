@@ -1,0 +1,62 @@
+ROR_1:59:java.lang.Boolean_zero(): inteiro == 0  =>   inteiro != 0
+ROR_2:59:java.lang.Boolean_zero(): fracionado == 0  =>   fracionado != 0
+COR_1:59:java.lang.Boolean_zero(): inteiro == 0 && fracionado == 0  =>   inteiro == 0 || fracionado == 0
+COR_2:59:java.lang.Boolean_zero(): inteiro == 0 && fracionado == 0  =>   inteiro == 0 ^ fracionado == 0
+COR_3:77:boolean_equals(java.lang.Object): inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado )  =>   inteiro.equals( outro.inteiro ) || fracionado.equals( outro.fracionado )
+COR_4:77:boolean_equals(java.lang.Object): inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado )  =>   inteiro.equals( outro.inteiro ) ^ fracionado.equals( outro.fracionado )
+COI_1:59:java.lang.Boolean_zero(): inteiro == 0  =>  !(inteiro == 0)
+COI_2:59:java.lang.Boolean_zero(): fracionado == 0  =>  !(fracionado == 0)
+COI_3:59:java.lang.Boolean_zero(): inteiro == 0 && fracionado == 0  =>  !(inteiro == 0 && fracionado == 0)
+COI_4:77:boolean_equals(java.lang.Object): inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado )  =>  !(inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado ))
+SDL_1:21:Dinheiro(br.ufsc.ine.leb.sistemaBancario.Moeda,java.lang.Integer,java.lang.Integer): this.moeda = moeda; this.inteiro = inteiro; this.fracionado = fracionado; normalizar();  =>   this.inteiro = inteiro; this.fracionado = fracionado; normalizar();
+SDL_2:21:Dinheiro(br.ufsc.ine.leb.sistemaBancario.Moeda,java.lang.Integer,java.lang.Integer): this.moeda = moeda; this.inteiro = inteiro; this.fracionado = fracionado; normalizar();  =>   this.moeda = moeda; this.fracionado = fracionado; normalizar();
+SDL_3:21:Dinheiro(br.ufsc.ine.leb.sistemaBancario.Moeda,java.lang.Integer,java.lang.Integer): this.moeda = moeda; this.inteiro = inteiro; this.fracionado = fracionado; normalizar();  =>   this.moeda = moeda; this.inteiro = inteiro; normalizar();
+SDL_4:21:Dinheiro(br.ufsc.ine.leb.sistemaBancario.Moeda,java.lang.Integer,java.lang.Integer): this.moeda = moeda; this.inteiro = inteiro; this.fracionado = fracionado; normalizar();  =>   this.moeda = moeda; this.inteiro = inteiro; this.fracionado = fracionado;
+SDL_5:29:void_normalizar(): java.lang.Integer soma = obterQuantiaEmEscala(); java.lang.Integer baseFracionaria = moeda.obterBaseFracionaria(); this.inteiro = (soma - soma % baseFracionaria) / baseFracionaria; this.fracionado = soma % baseFracionaria;  =>   java.lang.Integer soma = obterQuantiaEmEscala(); java.lang.Integer baseFracionaria = moeda.obterBaseFracionaria(); this.fracionado = soma % baseFracionaria;
+SDL_6:29:void_normalizar(): java.lang.Integer soma = obterQuantiaEmEscala(); java.lang.Integer baseFracionaria = moeda.obterBaseFracionaria(); this.inteiro = (soma - soma % baseFracionaria) / baseFracionaria; this.fracionado = soma % baseFracionaria;  =>   java.lang.Integer soma = obterQuantiaEmEscala(); java.lang.Integer baseFracionaria = moeda.obterBaseFracionaria(); this.inteiro = (soma - soma % baseFracionaria) / baseFracionaria;
+SDL_7:45:java.lang.String_formatado(): return zero() ? formatarSemMoeda() : formatarComMoeda();  =>   return \"\";
+SDL_8:50:java.lang.String_formatarSemMoeda(): return String.format( \"%d,%02d\", inteiro, fracionado );  =>   return \"\";
+SDL_9:55:java.lang.String_formatarComMoeda(): return String.format( \"%d,%02d %s\", inteiro, fracionado, moeda.toString() );  =>   return \"\";
+SDL_10:75:boolean_equals(java.lang.Object): if (objeto instanceof br.ufsc.ine.leb.sistemaBancario.Dinheiro) {     br.ufsc.ine.leb.sistemaBancario.Dinheiro outro = (br.ufsc.ine.leb.sistemaBancario.Dinheiro) objeto;     java.lang.Boolean mesmaMoeda = moeda.equals( outro.moeda );     java.lang.Boolean mesmoValor = inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado );     return zero() || mesmoValor && mesmaMoeda; } return super.equals( objeto );  =>   return super.equals( objeto );
+SDL_11:80:boolean_equals(java.lang.Object): if (objeto instanceof br.ufsc.ine.leb.sistemaBancario.Dinheiro) {     br.ufsc.ine.leb.sistemaBancario.Dinheiro outro = (br.ufsc.ine.leb.sistemaBancario.Dinheiro) objeto;     java.lang.Boolean mesmaMoeda = moeda.equals( outro.moeda );     java.lang.Boolean mesmoValor = inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado );     return zero() || mesmoValor && mesmaMoeda; }  =>   if (true) {     br.ufsc.ine.leb.sistemaBancario.Dinheiro outro = (br.ufsc.ine.leb.sistemaBancario.Dinheiro) objeto;     java.lang.Boolean mesmaMoeda = moeda.equals( outro.moeda );     java.lang.Boolean mesmoValor = inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado );     return zero() || mesmoValor && mesmaMoeda; }
+SDL_12:79:boolean_equals(java.lang.Object): return zero() || mesmoValor && mesmaMoeda;  =>   return true;
+SDL_13:79:boolean_equals(java.lang.Object): return zero() || mesmoValor && mesmaMoeda;  =>   return false;
+SDL_14:81:boolean_equals(java.lang.Object): return super.equals( objeto );  =>   return true;
+SDL_15:81:boolean_equals(java.lang.Object): return super.equals( objeto );  =>   return false;
+SDL_16:86:java.lang.String_toString(): return formatado();  =>   return \"\";
+VDL_1:28:void_normalizar():soma % baseFracionaria => baseFracionaria
+VDL_2:28:void_normalizar():soma % baseFracionaria => soma
+VDL_3:28:void_normalizar():soma - soma % baseFracionaria => soma % baseFracionaria
+VDL_4:28:void_normalizar():(soma - soma % baseFracionaria) / baseFracionaria => soma - soma % baseFracionaria
+VDL_5:29:void_normalizar():soma % baseFracionaria => baseFracionaria
+VDL_6:29:void_normalizar():soma % baseFracionaria => soma
+VDL_7:59:java.lang.Boolean_zero():inteiro == 0 => 0
+VDL_8:59:java.lang.Boolean_zero():fracionado == 0 => 0
+VDL_9:78:boolean_equals(java.lang.Object):mesmoValor && mesmaMoeda => mesmaMoeda
+VDL_10:78:boolean_equals(java.lang.Object):mesmoValor && mesmaMoeda => mesmoValor
+ODL_1:28:void_normalizar():soma % baseFracionaria => soma
+ODL_2:28:void_normalizar():soma % baseFracionaria => baseFracionaria
+ODL_3:28:void_normalizar():soma - soma % baseFracionaria => soma
+ODL_4:28:void_normalizar():soma - soma % baseFracionaria => soma % baseFracionaria
+ODL_5:28:void_normalizar():(soma - soma % baseFracionaria) / baseFracionaria => soma - soma % baseFracionaria
+ODL_6:28:void_normalizar():(soma - soma % baseFracionaria) / baseFracionaria => baseFracionaria
+ODL_7:29:void_normalizar():soma % baseFracionaria => soma
+ODL_8:29:void_normalizar():soma % baseFracionaria => baseFracionaria
+ODL_9:34:java.lang.Integer_obterQuantiaEmEscala():Math.abs( inteiro ) * moeda.obterBaseFracionaria() => Math.abs( inteiro )
+ODL_10:34:java.lang.Integer_obterQuantiaEmEscala():Math.abs( inteiro ) * moeda.obterBaseFracionaria() => moeda.obterBaseFracionaria()
+ODL_11:34:java.lang.Integer_obterQuantiaEmEscala():Math.abs( inteiro ) * moeda.obterBaseFracionaria() + Math.abs( fracionado ) => Math.abs( inteiro ) * moeda.obterBaseFracionaria()
+ODL_12:34:java.lang.Integer_obterQuantiaEmEscala():Math.abs( inteiro ) * moeda.obterBaseFracionaria() + Math.abs( fracionado ) => Math.abs( fracionado )
+ODL_13:59:java.lang.Boolean_zero():inteiro == 0 => inteiro
+ODL_14:59:java.lang.Boolean_zero():inteiro == 0 => 0
+ODL_15:59:java.lang.Boolean_zero():fracionado == 0 => fracionado
+ODL_16:59:java.lang.Boolean_zero():fracionado == 0 => 0
+ODL_17:59:java.lang.Boolean_zero():inteiro == 0 && fracionado == 0 => inteiro == 0
+ODL_18:59:java.lang.Boolean_zero():inteiro == 0 && fracionado == 0 => fracionado == 0
+ODL_19:77:boolean_equals(java.lang.Object):inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado ) => inteiro.equals( outro.inteiro )
+ODL_20:77:boolean_equals(java.lang.Object):inteiro.equals( outro.inteiro ) && fracionado.equals( outro.fracionado ) => fracionado.equals( outro.fracionado )
+ODL_21:78:boolean_equals(java.lang.Object):mesmoValor && mesmaMoeda => mesmoValor
+ODL_22:78:boolean_equals(java.lang.Object):mesmoValor && mesmaMoeda => mesmaMoeda
+ODL_23:78:boolean_equals(java.lang.Object):zero() || mesmoValor && mesmaMoeda => zero()
+ODL_24:78:boolean_equals(java.lang.Object):zero() || mesmoValor && mesmaMoeda => mesmoValor && mesmaMoeda
+CDL_1:59:java.lang.Boolean_zero():inteiro == 0 => inteiro
+CDL_2:59:java.lang.Boolean_zero():fracionado == 0 => fracionado

@@ -1,0 +1,2 @@
+Operacao(br.ufsc.ine.leb.sistemaBancario.EstadosDeOperacao,br.ufsc.ine.leb.sistemaBancario.Transacao)
+br.ufsc.ine.leb.sistemaBancario.EstadosDeOperacao_obterEstado()

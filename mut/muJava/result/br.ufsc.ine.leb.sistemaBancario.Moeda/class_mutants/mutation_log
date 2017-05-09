@@ -1,0 +1,5 @@
+PRV_1:20:this.baseFracionaria = escala;  =>  this.baseFracionaria = baseFracionaria;
+JSI_1:13:static is inserted
+JSI_2:15:static is inserted
+JTD_1:19:this.simbolo => simbolo
+JTI_1:19:simbolo  -->  this.simbolo

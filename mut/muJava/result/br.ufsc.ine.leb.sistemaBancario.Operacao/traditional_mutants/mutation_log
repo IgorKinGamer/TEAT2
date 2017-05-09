@@ -1,0 +1,1 @@
+SDL_1:14:Operacao(br.ufsc.ine.leb.sistemaBancario.EstadosDeOperacao,br.ufsc.ine.leb.sistemaBancario.Transacao): this.estado = estado;  =>  

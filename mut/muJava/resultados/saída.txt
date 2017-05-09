@@ -1,0 +1,23 @@
+br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline
+
+
+======================================== Generating Original Test Results ========================================
+{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=pass, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+
+
+======================================== Executing Mutants ========================================
+  IOD_1{contaMaria=pass, depósito10Reais=depósito10Reais: 84; Saldo expected: br.ufsc.ine.leb.sistemaBancario.Dinheiro<10,00 BRL> but was: br.ufsc.ine.leb.sistemaBancario.Dinheiro<10,00 BRL>, saqueSemSaldo=saqueSemSaldo: 132; Saldo expected: br.ufsc.ine.leb.sistemaBancario.Dinheiro<4,00 BRL> but was: br.ufsc.ine.leb.sistemaBancario.Dinheiro<4,00 BRL>, saque6Reais=saque6Reais: 108; Saldo expected: br.ufsc.ine.leb.sistemaBancario.Dinheiro<4,00 BRL> but was: br.ufsc.ine.leb.sistemaBancario.Dinheiro<4,00 BRL>, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  IOD_2{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=pass, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  JSI_1{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=pass, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  JSI_2{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=saqueSemSaldo: 130; Estado expected:<SALDO_INSUFICIENTE> but was:<SUCESSO>, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  JSI_3{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=pass, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  JTD_1{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  JTD_2{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  JTD_3{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  JTI_1{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  JTI_2{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  JTI_3{contaMaria=contaMaria: 51; fail, depósito10Reais=depósito10Reais: 72; fail, saqueSemSaldo=saqueSemSaldo: 117; fail, saque6Reais=saque6Reais: 93; fail, agênciaCentro=agênciaCentro: 33; fail, bancoBancoDoBrasil=bancoBancoDoBrasil: 19; fail}
+  PRV_1{contaMaria=pass, depósito10Reais=pass, saqueSemSaldo=saqueSemSaldo: 130; Estado expected:<SALDO_INSUFICIENTE> but was:<SUCESSO>, saque6Reais=pass, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+  PRV_2{contaMaria=pass, depósito10Reais=depósito10Reais: 84; Saldo expected:<10,10 BRL> but was:<0,00>, saqueSemSaldo=saqueSemSaldo: 132; Saldo expected:<4,04 BRL> but was:<0,00>, saque6Reais=saque6Reais: 107; Estado expected:<SUCESSO> but was:<SALDO_INSUFICIENTE>, agênciaCentro=pass, bancoBancoDoBrasil=pass}
+test report: {contaMaria=JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3, depósito10Reais=IOD_1, JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3, PRV_2, saqueSemSaldo=IOD_1, JSI_2, JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3, PRV_1, PRV_2, saque6Reais=IOD_1, JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3, PRV_2, agênciaCentro=JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3, bancoBancoDoBrasil=JTD_1, JTD_2, JTD_3, JTI_1, JTI_2, JTI_3}
+mutant report: {JTI_2=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, JTI_3=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, JSI_2=saqueSemSaldo, PRV_2=saque6Reais, depósito10Reais, saqueSemSaldo, JSI_1=, JTI_1=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, PRV_1=saqueSemSaldo, JSI_3=, JTD_3=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, JTD_1=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, JTD_2=saque6Reais, agênciaCentro, contaMaria, depósito10Reais, bancoBancoDoBrasil, saqueSemSaldo, IOD_2=, IOD_1=saque6Reais, depósito10Reais, saqueSemSaldo}

@@ -1,0 +1,3 @@
+JSI_1:10:static is inserted
+JTD_1:14:this.estado => estado
+JTI_1:14:estado  -->  this.estado

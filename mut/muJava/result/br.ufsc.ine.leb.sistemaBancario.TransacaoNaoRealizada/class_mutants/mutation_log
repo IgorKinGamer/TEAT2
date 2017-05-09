@@ -1,0 +1,5 @@
+JSI_1:10:static is inserted
+JTD_1:14:this.transacao => transacao
+JTI_1:14:transacao  -->  this.transacao
+IOD_1:17:public br.ufsc.ine.leb.sistemaBancario.ValorMonetario obterValorMonetario() is deleted.
+IOD_2:22:public br.ufsc.ine.leb.sistemaBancario.ValorMonetario contabilizar(br.ufsc.ine.leb.sistemaBancario.ValorMonetario saldo) is deleted.
