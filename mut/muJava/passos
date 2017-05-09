@@ -1,16 +1,33 @@
+#!/bin/bash
+
 # Definir $muJava e $JAVA_HOME
-. preparar
+if [ $# -ne 1 ]
+then
+	echo "Forneça a pasta do eclipse"
+	exit 1
+fi
+eclipse=$1
+export muJava=$(pwd)
+export JUnitJar=$(echo $eclipse/plugins/org.junit_*/junit.jar)
+export HamcrestJar=$(echo $eclipse/plugins/org.hamcrest.core_*.jar)
 
 # Baixar
-wget https://cs.gmu.edu/~offutt/mujava/{mujava.jar,openjava.jar,mujava.config} -P $muJava
+for f in {mujava,openjava}.jar; do
+	wget -q https://cs.gmu.edu/~offutt/mujava/$f -O $f -P $muJava
+	echo \"$f\" baixado
+done
 
 # Colocar no classpath
-export CLASSPATH=$CLASSPATH:$muJava/mujava.jar:$muJava/openjava.jar:$JAVA_HOME/lib/tools.jar
+export CLASSPATH=.:$muJava/mujava.jar
+export CLASSPATH=$CLASSPATH:$muJava/openjava.jar
+export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib/tools.jar
+export CLASSPATH=$CLASSPATH:$JUnitJar
+export CLASSPATH=$CLASSPATH:$HamcrestJar
 
-# Editar $muJava/mujava.config
-# (Manualmente)
-echo MuJava_HOME=$muJava > $muJava/mujava.config
+# Criar $muJava/mujava.config
+echo "MuJava_HOME=$muJava" > $muJava/mujava.config
 
 # Criar estrutura
-mkdir -p $muJava/{classes,result,src,testset}
+#mkdir -p $muJava/{classes,result,src,testset}
+java mujava.makeMuJavaStructure
 

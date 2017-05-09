@@ -1,1 +1,1 @@
-java mujava.gui.GenMutantsMain
+@java mujava.gui.GenMutantsMain
