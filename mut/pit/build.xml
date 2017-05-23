@@ -74,7 +74,7 @@
 			<path refid="test.path"/>
 		</path>
 		<pitest pitClasspath="pitest.path" threads="2"
-		        classPath="mutation.path" targetTests="br.ufsc.ine.leb.sistemaBancario.*" targetClasses="br.ufsc.ine.leb.sistemaBancario.testes.*"
+		        classPath="mutation.path" targetTests="br.ufsc.ine.leb.sistemaBancario.testes.*" targetClasses="br.ufsc.ine.leb.sistemaBancario.*"
 				reportDir="relatoriosPit" sourceDir="src" />
 	</target>
 

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="LAPTOP-3HPHKPQC" id="0" name="TestesSetupInline" package="br.ufsc.ine.leb.sistemaBancario.testes" skipped="0" tests="6" time="0.057" timestamp="2017-05-23T21:38:53">
+      <properties>
+          <property name="ant.project.invoked-targets" value="pit" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin" />
+
+          <property name="java.vm.version" value="25.131-b11" />
+
+          <property name="ant.file.SisBan-pit" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit\build.xml" />
+
+          <property name="ant.library.dir" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.script" value="" />
+
+          <property name="user.country" value="BR" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit" />
+
+          <property name="java.runtime.version" value="1.8.0_131-b11" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="basedir" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.io.tmpdir" value="D:\utils\cygwin\tmp\" />
+
+          <property name="ant.core.lib" value="D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.variant" value="" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="ant.home" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="ant.project.name" value="SisBan-pit" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="cygwin.user.home" value="D:/utils/cygwin/home/KinGamer" />
+
+          <property name="classOutputDir" value="bin" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\utils\cygwin\usr\local\bin;D:\utils\cygwin\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MiKTeX 2.9\miktex\bin\x64;C:\Program Files\Java\jdk1.8.0_131\bin;D:\utils\cygwin\bin;D:\Lixo\matlab\R2017a\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0;D:\utils;C:\Users\KinGamer\AppData\Local\Microsoft\WindowsApps;." />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="ant.file" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit\build.xml" />
+
+          <property name="user.home" value="C:\Users\KinGamer" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="java.class.path" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-antlr.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-bcel.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-bsf.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-log4j.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-oro.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-regexp.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-resolver.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-xalan2.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-commons-logging.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-commons-net.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jai.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-javamail.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jdepend.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jmf.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jsch.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit4.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-launcher.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-netrexx.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-swing.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-testutil.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_131\lib\tools.jar" />
+
+          <property name="user.name" value="KinGamer" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  pit" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="user.language" value="pt" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="ant.file.type.SisBan-pit" value="file" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.version" value="1.8.0_131" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+      </properties>
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="bancoBancoDoBrasil" time="0.005" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="contaMaria" time="0.003" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="agênciaCentro" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="saqueSemSaldo" time="0.004" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="depósito10Reais" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupInline" name="saque6Reais" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="LAPTOP-3HPHKPQC" id="1" name="TestesSetupVariado" package="br.ufsc.ine.leb.sistemaBancario.testes" skipped="0" tests="6" time="0.006" timestamp="2017-05-23T21:38:53">
+      <properties>
+          <property name="ant.project.invoked-targets" value="pit" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin" />
+
+          <property name="java.vm.version" value="25.131-b11" />
+
+          <property name="ant.file.SisBan-pit" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit\build.xml" />
+
+          <property name="ant.library.dir" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.script" value="" />
+
+          <property name="user.country" value="BR" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit" />
+
+          <property name="java.runtime.version" value="1.8.0_131-b11" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="basedir" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.io.tmpdir" value="D:\utils\cygwin\tmp\" />
+
+          <property name="ant.core.lib" value="D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.variant" value="" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="ant.home" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="ant.project.name" value="SisBan-pit" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="cygwin.user.home" value="D:/utils/cygwin/home/KinGamer" />
+
+          <property name="classOutputDir" value="bin" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\utils\cygwin\usr\local\bin;D:\utils\cygwin\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MiKTeX 2.9\miktex\bin\x64;C:\Program Files\Java\jdk1.8.0_131\bin;D:\utils\cygwin\bin;D:\Lixo\matlab\R2017a\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0;D:\utils;C:\Users\KinGamer\AppData\Local\Microsoft\WindowsApps;." />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="ant.file" value="D:\UFSC\17.1\Trabalhos\3 - TEAT2\mut\pit\build.xml" />
+
+          <property name="user.home" value="C:\Users\KinGamer" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="java.class.path" value="D:/P/Java/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-antlr.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-bcel.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-bsf.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-log4j.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-oro.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-regexp.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-resolver.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-apache-xalan2.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-commons-logging.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-commons-net.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jai.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-javamail.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jdepend.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jmf.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-jsch.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit4.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-launcher.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-netrexx.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-swing.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-testutil.jar;D:\P\Java\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_131\lib\tools.jar" />
+
+          <property name="user.name" value="KinGamer" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  pit" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="user.language" value="pt" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="ant.file.type.SisBan-pit" value="file" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.version" value="1.8.0_131" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+      </properties>
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="bancoBancoDoBrasil" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="contaMaria" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="agênciaCentro" time="0.001" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="saqueSemSaldo" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="depósito10Reais" time="0.0" />
+
+      <testcase classname="br.ufsc.ine.leb.sistemaBancario.testes.TestesSetupVariado" name="saque6Reais" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
